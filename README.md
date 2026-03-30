@@ -50,7 +50,14 @@ Dashboard interativo para análise de performance de trades de skins do CS2, con
 
 ---
 
-## 🚀 Como rodar
+## 🚀 Deploy
+▶️ Acesse online
+
+O dashboard está publicado e disponível sem instalação:
+
+👉Acesse aqui:  https://cs2dashboard.streamlit.app
+
+## 💻 Como rodar localmente
 
 ### 1. Clone o repositório
 ```bash
