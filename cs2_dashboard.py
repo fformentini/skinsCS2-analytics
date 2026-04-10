@@ -472,10 +472,10 @@ with tab3:
                 "Lucro (R$)": "R$ {:.2f}",
                 "ROI (%)": "{:.1f}%",
             })
-            .applymap(lambda v: "color: #10b981; font-weight:bold" if isinstance(v, float) and v > 0 else
+            .map(lambda v: "color: #10b981; font-weight:bold" if isinstance(v, float) and v > 0 else
                                 "color: #ef4444; font-weight:bold" if isinstance(v, float) and v < 0 else "",
                       subset=["Lucro (R$)"])
-            .applymap(lambda v: "color: #10b981" if isinstance(v, str) and v.endswith("%") and float(v[:-1]) >= 50 else
+            .map(lambda v: "color: #10b981" if isinstance(v, str) and v.endswith("%") and float(v[:-1]) >= 50 else
                                 "color: #f97316" if isinstance(v, str) and v.endswith("%") and float(v[:-1]) >= 20 else
                                 "color: #eab308" if isinstance(v, str) and v.endswith("%") else "",
                       subset=["ROI (%)"]),
